@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta property="theme-color" content="#161616">
+    <meta name="og:description" content=":)">
+    <meta name="og:title" content="Kado">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <section class="banner" id="home">
+        <div class="overlay"></div>
+        <header>
+            <a href="#" class="logo"><img src="images/kado.png"></a>
+        </header>
+        <div class="content" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Merhaba,<br><span>Hoş Geldin!</span></h2>
+            <p>Merhaba Benle İletişime Geçmek İçin Tıkla !</p>
+            <a href="https://www.instagram.com/kadoresmi00/" target="_blank">Tıkla</a>
+
+        </div>
+    </section>
+    <div class="KADO">
+        <div class="overlay"></div>
+        <div class="text">
+            <h1>İnstagram hesabıma<br>göz atmadın mı?</h1>
+            <a href="https://www.instagram.com/kadoresmi00/" target="_blank">Hemen Bak!</a>
+        </div>
+        <div class="KADOImg"><img src="images/logo.png"></div>
+    </div>
+    <div class="footer">
+
+        <p class="copyright">&copy; Tüm Hakları Saklıdır. <span>Kado ©</span></p>
+    </div>
+
+    <button id="back-to-top-btn"><i class="fa fa-angle-up"></i></button>
+    <script>
+        function toggle() {
+            var home = document.getElementById('home');
+            var nav = document.getElementById('navigation');
+            home.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="Javascript/main.js"></script>
+</body>
+
+</html>
